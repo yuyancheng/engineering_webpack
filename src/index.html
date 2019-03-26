@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html manifest="./offline.appcache">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+</head>
+<body>
+    <form id="test1" name="test1">
+        <button type="submit">submit1</button>
+    </form>
+    <form id="test2" name="test2">
+        <label>Date: </label>
+        <input type="text" form="test1" title="This si quired!!!" required />
+        <input type="date" required />
+        <button type="submit">submit2</button>
+    </form>
+
+    <div id="templateHolder"></div>
+
+    <script src="js/compile.js"></script>
+    <script type="text/javascript">
+        // // 浏览器定位
+        // window.navigator.geolocation.getCurrentPosition((position) => {
+        //     console.log(info);
+        // }, (error) => {
+        //     console.log(error);
+        // }, {
+        //     enableHighAccuracy: false,
+        //     timeout: 15000,
+        //     maximumAge: 0
+        // });
+
+        let x;
+        if ([1][0] === undefined) {
+            x = f();
+        } else {
+            x = [1][0];
+        }
+
+        const {a: aa, b: bb} = {
+            a: () => 'a string set',
+            b: 123
+        };
+
+        console.log(aa());
+
+        // 对数组进行对象属性解构
+        const arr = [1, 2, 3];
+        const {0: a, [arr.length - 1]: b} = arr;
+        // console.log(a); console.log(b)
+        // 对字符串解构
+        // const [c, d, e] = 'absolute'
+        // const {c, d, e} = 'absolute'
+        // console.log(c); console.log(d); console.log(e);
+
+        // function move({x, y} = {x: 0, y: 0}) {
+        //     return [x, y]
+        // }
+        // console.log(move({x:3, y:5}));
+        // console.log(move({x:3}));
+        // console.log(move({}));
+        // console.log(move());
+
+        // const map = new Map();
+        // map.set('first', 'hello');
+        // map.set('second', 'world');
+
+        // for (let [key, value] of map) {
+        //     console.log(key + " is " + value);
+        // }
+
+        // const alongstr = 'features\u02343\u0234\u1234'
+        // console.log(alongstr.startsWith('features', 0))
+        // console.log(String.fromCodePoint(0x02343))
+        // console.log(String.fromCodePoint(0x02344))
+
+        // const padStr = 'from other'
+        // const newstr = alongstr.padSatrt(20, padStr)
+        // console.log(newStr)
+
+        const obj_a = {
+            a: 123
+        };
+        const obj_b = {
+            a: 123
+        };
+        console.log(Object.is(obj_a, obj_b));
+    </script>
+</body>
+</html>
