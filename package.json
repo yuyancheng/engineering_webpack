@@ -1,9 +1,33 @@
 {
-    "scripts": {
-        "start": "npm run dev",
-        "build": "node node build/dev.js"
-    },
-    "dependencies": {
-        "vue": "v2.5.7"
-    }
+  "name": "engineering",
+  "version": "1.0.0",
+  "description": "a project of engineering.",
+  "main": "index.js",
+  "dependencies": {
+    "webpack-cli": "^3.2.3",
+    "webpack": "^4.29.5"
+  },
+  "devDependencies": {
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-preset-flow": "^6.23.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^2.1.1",
+    "flow-bin": "^0.98.1",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-loader": "^3.0.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "ts-loader": "^6.0.1",
+    "typescript": "^3.4.5",
+    "webpack-cli": "^3.2.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run dev",
+    "build": "node ./build/dev.js"
+  },
+  "author": "yyc",
+  "license": "ISC"
 }
